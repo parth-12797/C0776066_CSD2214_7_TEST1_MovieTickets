@@ -3,15 +3,22 @@
 <head>
 	<title>movie-buy</title>
 	<link rel="stylesheet" type="text/css" href="./style/index.css">
+	<style type="text/css">
+	.ss
+	{
+		height: 40px;
+		width: 200px;
+	}
+</style>
 </head>
 <div>
-	<table style="margin-left: 600px;">
+	<div style="margin-left: 575px;">
 		<tr>
 			<td>
 				<p>select movie</p>
 				</td>
 				<td>
-					<select>
+					<select class="ss">
 					<option value="padmavati">padmavati</option>
 					<option value="raaz">raaz</option>
 					<option value="king">king</option>
@@ -145,6 +152,13 @@
    
      </ol>
  
+</div>
+	<div  style="margin-left: 600px;">
+	<p>movie selected</p><span id="movie_name"></span>
+	<p>ticket price</p><span id="price"></span>
+	<p>number of seat selected</p><span id="no_seat"></span>
+	<p>total price</p><span id="total"></span>
+	<button value="seats">buy seats</button>
 </div>
 </body>
 </html>
