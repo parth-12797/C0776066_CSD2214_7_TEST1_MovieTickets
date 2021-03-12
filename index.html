@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>movie-buy</title>
 	<link rel="stylesheet" type="text/css" href="./style/index.css">
-	<style type="text/css">
+
+<style type="text/css">
 	.ss
 	{
 		height: 40px;
 		width: 200px;
 	}
 </style>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="./js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="./js/index.js"></script>
 </head>
-<div>
+<body>
 	<div style="margin-left: 575px;">
+	<table >
 		<tr>
 			<td>
-				<p>select movie</p>
+				<h4>select movie</h5>
 				</td>
 				<td>
-					<select class="ss">
+					<select class="ss" onchange="get_movie()" id="m_name">
 					<option value="padmavati">padmavati price=13</option>
 					<option value="raaz">raaz price=10</option>
 					<option value="king">king price=7</option>
@@ -38,31 +42,32 @@
   <div class="exit exit--front fuselage" style="margin-top: -176px">
     
   </div>
+  <div id="test">
   <ol class="cabin fuselage">
     <li class="row row--1">
       <ol class="seats" type="A">
         <li class="seat">
-          <input type="checkbox" id="1A" />
+          <input type="checkbox" id="1A" class="check1" />
           <label for="1A">1A</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="1B" />
+          <input type="checkbox" id="1B" class="check1"/>
           <label for="1B">1B</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="1C" />
+          <input type="checkbox" id="1C" class="check1"/>
           <label for="1C">1C</label>
         </li>
         <li class="seat">
-          <input type="checkbox"  id="1D" />
+          <input type="checkbox"  id="1D" class="check1"/>
           <label for="1D">1D</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="1E" />
+          <input type="checkbox" id="1E" class="check1"/>
           <label for="1E">1E</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="1F" />
+          <input type="checkbox" id="1F" class="check1"/>
           <label for="1F">1F</label>
         </li>
       </ol>
@@ -70,27 +75,27 @@
     <li class="row row--2">
       <ol class="seats" type="A">
         <li class="seat">
-          <input type="checkbox" id="2A" />
+          <input type="checkbox" id="2A" class="check1"/>
           <label for="2A">2A</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="2B" />
+          <input type="checkbox" id="2B" class="check1"/>
           <label for="2B">2B</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="2C" />
+          <input type="checkbox" id="2C" class="check1"/>
           <label for="2C">2C</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="2D" />
+          <input type="checkbox" id="2D" class="check1"/>
           <label for="2D">2D</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="2E" />
+          <input type="checkbox" id="2E" class="check1"/>
           <label for="2E">2E</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="2F" />
+          <input type="checkbox" id="2F" class="check1"/>
           <label for="2F">2F</label>
         </li>
       </ol>
@@ -98,27 +103,27 @@
     <li class="row row--3">
       <ol class="seats" type="A">
         <li class="seat">
-          <input type="checkbox" id="3A" />
+          <input type="checkbox" id="3A" class="check1" />
           <label for="3A">3A</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="3B" />
+          <input type="checkbox" id="3B" class="check1"/>
           <label for="3B">3B</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="3C" />
+          <input type="checkbox" id="3C" class="check1"/>
           <label for="3C">3C</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="3D" />
+          <input type="checkbox" id="3D" class="check1"/>
           <label for="3D">3D</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="3E" />
+          <input type="checkbox" id="3E" class="check1"/>
           <label for="3E">3E</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="3F" />
+          <input type="checkbox" id="3F" class="check1"/>
           <label for="3F">3F</label>
         </li>
       </ol>
@@ -126,41 +131,41 @@
     <li class="row row--4">
       <ol class="seats" type="A">
         <li class="seat">
-          <input type="checkbox" id="4A" />
+          <input type="checkbox" id="4A" class="check1"/>
           <label for="4A">4A</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="4B" />
+          <input type="checkbox" id="4B" class="check1"/>
           <label for="4B">4B</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="4C" />
+          <input type="checkbox" id="4C" class="check1"/>
           <label for="4C">4C</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="4D" />
+          <input type="checkbox" id="4D" class="check1"/>
           <label for="4D">4D</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="4E" />
+          <input type="checkbox" id="4E" class="check1"/>
           <label for="4E">4E</label>
         </li>
         <li class="seat">
-          <input type="checkbox" id="4F" />
+          <input type="checkbox" id="4F" class="check1"/>
           <label for="4F">4F</label>
         </li>
       </ol>
     </li>
    
      </ol>
- 
+ </div>
 </div>
-	<div  style="margin-left: 600px;">
-	<p>movie selected</p><span id="movie_name"></span>
-	<p>ticket price</p><span id="price"></span>
-	<p>number of seat selected</p><span id="no_seat"></span>
-	<p>total price</p><span id="total"></span>
-	<button value="seats">buy seats</button>
+<div  style="margin-left: 600px;">
+	<p>movie selected:<span id="movie_name">padmavati</span></p>
+	<p>ticket price:<span id="price">13</span></p>
+	<p>number of seat selected:<span id="no_seat">0</span></p>
+	<p>total price:<span id="total">0</span></p>
+	<button value="seats"><a href="payment_details.html">buy seats</a></button>
 </div>
 </body>
 </html>
