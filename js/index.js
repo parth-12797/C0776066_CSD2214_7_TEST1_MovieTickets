@@ -14,7 +14,7 @@ document.getElementById('total').innerHTML = '';
 	}
 	else if(e=="raaz")
 	{
-p=count*13;
+p=count*10;
 document.getElementById('total').innerHTML = '';
 	document.getElementById('total').innerHTML = p;
 
